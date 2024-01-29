@@ -19,8 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Serve static files from the 'backend/public' directory
-app.use("/api/img", express.static(path.join(__dirname, "public/img")));
-// app.use("/public", express.static(path.join(__dirname, "public")));
+app.use("/api/img", express.static(path.join(__dirname, "public/Img")));
 
 //test middleware
 app.use((req, res, next) => {
