@@ -1,0 +1,11 @@
+.pageStats {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--base-gray);
+}
+
+@media (max-width: 768px) {
+  .pageStats {
+    font-size: 11px;
+  }
+}

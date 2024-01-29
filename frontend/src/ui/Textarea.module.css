@@ -1,0 +1,34 @@
+.textWrapper {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.textWrapper label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.textWrapper label > span {
+  color: var(--base-red);
+}
+
+.textWrapper > span {
+  color: var(--base-red);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.textWrapper textarea {
+  border: 1px solid var(--base-gray);
+  padding: 0 17px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: var(--base-black);
+}
+
+.textWrapper textarea:focus {
+  outline: none;
+}

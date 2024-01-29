@@ -1,0 +1,89 @@
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 44.53px;
+  padding-top: 62.47px;
+}
+.mainWrapper.bg {
+  background-color: var(--base-white);
+}
+.mainWrapper > div {
+  width: 100%;
+  max-width: 1160px;
+  display: flex;
+  justify-content: space-around;
+}
+.mainWrapper .content {
+  width: 100%;
+  max-width: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainWrapper .content > div {
+  position: relative;
+}
+.mainWrapper .content > div img:last-child {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -46%);
+}
+.mainWrapper .content h4 {
+  font-size: 18px;
+  color: var(--base-black);
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 13px;
+}
+.mainWrapper .content p {
+  font-size: 14px;
+  color: var(--base-black);
+  font-weight: 400;
+  opacity: 0.7;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .mainWrapper .content h4 {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+
+  .mainWrapper .content p {
+    font-size: 12px;
+  }
+
+  .mainWrapper .content > div img:first-child {
+    width: 45px;
+  }
+
+  .mainWrapper .content > div img:last-child {
+    width: 20px;
+  }
+
+  .mainWrapper .content > div img:last-child {
+    top: 42%;
+  }
+
+  .mainWrapper .content {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 710px) {
+  .mainWrapper>div{
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .mainWrapper .content {
+    max-width: 100%;
+  }
+
+  .mainWrapper .content p {
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,102 @@
+.filterWrapper {
+  width: 100%;
+  max-width: 234px;
+  background-color: var(--base-white);
+  padding: 0 14px;
+  min-height: 845px;
+  max-height: 845px;
+  min-width: 200px;
+}
+.filterWrapper .header {
+  margin-bottom: 17px;
+}
+
+.filterWrapper .header > h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+}
+.filterWrapper .header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filterWrapper .header > div button,
+.drawerButton button {
+  width: 100%;
+  max-width: 200px;
+  background-color: transparent;
+  font-size: 14px;
+  color: var(--base-gray);
+  height: 37px;
+  border: 2px solid var(--base-gray);
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footerWrapper {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.footerWrapper button {
+  width: 100%;
+  max-width: 200px;
+  background-color: var(--base-blue);
+  font-size: 14px;
+  color: var(--base-light-white);
+  height: 37px;
+  border: 2px solid var(--base-blue);
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+:global(.active) {
+  color: var(--base-blue) !important;
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--base-light-gray);
+  padding: 15px 0;
+}
+.drawerHeader h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.drawerHeader img {
+  cursor: pointer;
+}
+
+.drawerHeader,
+.drawerButton {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .drawerHeader{
+    display: flex;
+    margin-bottom: 15px 
+  }
+
+  .drawerButton {
+    display: block;
+    margin-top: 15px 
+  }
+
+  .filterWrapper .header {
+    display: none;
+  }
+
+  .filterWrapper{
+    max-width: 100%;
+    background-color: var(--base-light-white);
+  }
+}

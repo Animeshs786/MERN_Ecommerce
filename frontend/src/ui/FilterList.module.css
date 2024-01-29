@@ -1,0 +1,29 @@
+.filterOptions .optionHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.filterOptions .optionHeading h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--base-black);
+  cursor: pointer;
+}
+
+.filterOptions .optionHeading img {
+  cursor: pointer;
+}
+
+.optionItems ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.optionItems ul li {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--base-black);
+  cursor: pointer;
+}

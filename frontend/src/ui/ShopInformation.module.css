@@ -1,0 +1,96 @@
+.infoWrapper {
+  background-color: var(--base-black);
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+.infoWrapper :global(.container) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoWrapper :global(.container) > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infoWrapper .firstMsg {
+  color: var(--base-gray);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.infoWrapper .secondMsg {
+  color: var(--base-light-white);
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+}
+
+.infoWrapper :global(.time)::after {
+  content: url(/images/down-icon.svg);
+  position: absolute;
+  top: 2px;
+  right: -18px;
+}
+.infoWrapper a {
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  color: var(--base-light-white);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact::after {
+  content: "";
+  background-color: var(--base-light-white);
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: relative;
+  bottom: -2px;
+  border-radius: 2px;
+  left: 0;
+}
+
+@media (max-width: 1024px) {
+  .infoWrapper {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .infoWrapper :global(.container) > div:nth-child(2) {
+    display: none;
+  }
+
+  .infoWrapper :global(.container) {
+    margin-left: 100px;
+  }
+
+  .infoWrapper :global(.container) > div a {
+    display: none;
+  }
+
+  .infoWrapper .firstMsg,
+  .infoWrapper .secondMsg {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 500px){
+  .infoWrapper :global(.container) {
+    margin-left: 74px;
+  }
+}
+
+@media (max-width: 405px){
+  .infoWrapper :global(.container) > div:nth-child(3) {
+    display: none;
+  }
+}

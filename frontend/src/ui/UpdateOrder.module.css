@@ -1,0 +1,14 @@
+main {
+    max-height: 525px;
+    overflow: auto;
+  }
+  
+  .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .buttonWrapper {
+    margin: 20px 0;
+  }
+  

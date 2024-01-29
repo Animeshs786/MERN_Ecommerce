@@ -1,0 +1,45 @@
+.tableWrapper {
+  overflow: auto;
+  height: 445px;
+}
+
+.tableWrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.tableWrapper thead th {
+  border-bottom: 1px solid var(--base-light-gray);
+  text-align: start;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--base-black);
+  padding-bottom: 8px;
+}
+
+.tableWrapper tbody td {
+  vertical-align: top;
+  padding: 15px 0;
+  text-align: justify;
+  border-bottom: 1px solid var(--base-light-gray);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--base-black);
+  max-width: 271px;
+}
+
+.tableWrapper tbody td:last-child img {
+  cursor: pointer;
+}
+
+.tableContainer {
+  height: 500px;
+  overflow: auto;
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}

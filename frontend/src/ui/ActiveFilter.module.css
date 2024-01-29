@@ -1,0 +1,25 @@
+.activeItem {
+    border: 2px solid var(--base-gray);
+    font-size: 13px;
+    font-weight: 600;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+  
+ .activeItem img {
+    cursor: pointer;
+  }
+
+  @media(min-width:320px) and (max-width:1020px){
+    .activeItem{
+      font-size: 11px;
+      height: 34px;
+
+    }
+    .activeItem img {
+      width: 16px;
+    }
+  }

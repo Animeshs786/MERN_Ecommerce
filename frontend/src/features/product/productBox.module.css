@@ -1,0 +1,142 @@
+.statsWrapper {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.statsWrapper > div:last-child {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.statsWrapper .listStats {
+  width: 100%;
+  max-width: 659.074px;
+}
+.contentSection {
+  width: 100%;
+}
+.productContentWrapper {
+  display: flex;
+  gap: 6px;
+}
+
+.activeFilter {
+  display: flex;
+  gap: 7px;
+}
+
+.activeFilter > button {
+  border: 2px solid var(--base-gray);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--base-black);
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0 10px;
+}
+
+.productListingWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 4px;
+  column-gap: 4px;
+}
+
+.selectBoxWrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.selectBoxWrapper > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.cardOuterLayer {
+  height: 405px;
+}
+
+.filterBtn {
+  border: 2px solid var(--base-gray);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--base-black);
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0 10px;
+  height: 40px;
+  width: 130px;
+}
+
+.filterBtn {
+  display: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .productListingWrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+  .productListingWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cardOuterLayer {
+    height: 318px;
+  }
+
+  .activeFilter > button {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  .productListingWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardOuterLayer {
+    height: 317px;
+  }
+
+  .statsWrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .selectBoxWrapper div:nth-child(1) {
+    display: none;
+  }
+
+  .filterBtn {
+    display: block;
+  }
+
+  .statsWrapper > div:last-child {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .productContentWrapper > div:first-child {
+    display: none;
+  }
+  .selectBoxWrapper {
+    flex-wrap: wrap;
+  }
+
+  .selectBoxWrapper > div:last-child {
+    display: none;
+  }
+}

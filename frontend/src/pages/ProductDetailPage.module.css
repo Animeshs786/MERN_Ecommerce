@@ -1,0 +1,228 @@
+.productDetail {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--base-light-gray);
+}
+
+:global(.container) .headerWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+:global(.container) .headerWrapper > div:last-child,
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+:global(.container) .headerWrapper > div:last-child > div,
+.priceWrapper > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+:global(.container) .headerWrapper > div:last-child > div span,
+.priceWrapper > div span {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--base-black);
+}
+
+:global(.container) .headerWrapper > div:last-child > div h3,
+.priceWrapper > div h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--base-black);
+}
+
+.productContentWrapper {
+  display: flex;
+  gap: 30px;
+}
+.productContentWrapper .imageContainer {
+  position: relative;
+  max-height: 470px;
+}
+.productContentWrapper .imageContainer .imageBox {
+  width: 469px;
+  height: 469px;
+}
+
+.productContentWrapper .imageContainer .imageBox img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.productContentWrapper .imageContainer .btnWrapper span {
+  display: inline-block;
+  cursor: pointer;
+  width: 10px;
+  margin-right: 5px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--base-gray);
+}
+.productContentWrapper .imageContainer .btnWrapper {
+  position: absolute;
+  top: 414px;
+  right: 0px;
+}
+.productContentWrapper .imageContainer .btnWrapper span:global(.active) {
+  background-color: var(--base-blue);
+}
+
+.priceWrapper {
+  display: none;
+}
+.isHidden {
+  display: none;
+}
+.featuresWrapper {
+  background: url("/images/featuresDetail.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 100px;
+}
+.featuresWrapper > div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.featuresWrapper h2 {
+  color: var(--base-light-white);
+  font-size: 44px;
+  font-weight: 500;
+  max-width: 436px;
+}
+.featuresWrapper p {
+  color: var(--base-light-white);
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 436px;
+  text-align: justify;
+}
+@media (max-width: 1400px) {
+  .productDetail {
+    padding: 0 5px;
+  }
+  .productContentWrapper .imageContainer .btnWrapper {
+    right: 50%;
+    top: 394px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .featuresWrapper h2 {
+    font-size: 30px;
+  }
+  .featuresWrapper p {
+    font-size: 14px;
+    max-width: 340px;
+  }
+  .featuresWrapper {
+    height: 400px;
+    padding-right: 40px;
+    background-size: 136%;
+  }
+
+  .headerWrapper button,
+  .priceWrapper button {
+    max-width: 133px !important;
+    height: 38px !important;
+    font-size: 13px !important;
+  }
+
+  .productDetail {
+    padding: 0 5px;
+    padding-left: 18px;
+  }
+
+  .productContentWrapper .imageContainer .imageBox {
+    width: 363px;
+    height: 385px;
+  }
+
+  .productContentWrapper .imageContainer .imageBox img {
+    width: 70%;
+    height: 100%;
+  }
+
+  .productContentWrapper .imageContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .productContentWrapper .imageContainer .imageBox {
+    display: flex;
+    justify-content: center;
+  }
+  .productContentWrapper .imageContainer .btnWrapper {
+    top: 330px;
+  }
+}
+
+@media (max-width: 680px) {
+  .featuresWrapper {
+    background-size: contain;
+    height: 500px;
+    justify-content: flex-end;
+    background-color: #010101;
+    background-position: top;
+    padding: 20px;
+    align-items: center;
+  }
+  .featuresWrapper >div{
+    gap: 20px;
+  }
+  .isMobile {
+    display: none !important;
+  }
+
+  .isHidden {
+    display: block;
+  }
+
+  .productContentWrapper .imageContainer .imageBox img {
+    width: 75%;
+    height: 92%;
+  }
+
+  .priceWrapper {
+    display: flex;
+  }
+
+  .productContentWrapper {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .productContentWrapper > div:first-child {
+    background-color: var(--base-light-white) !important;
+  }
+
+  .priceWrapper {
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 70px;
+    border-bottom: 1px solid var(--base-light-gray);
+    border-top: 1px solid var(--base-light-gray);
+  }
+
+  .productContentWrapper .imageContainer .imageBox {
+    height: 280px;
+  }
+
+  .productContentWrapper .imageContainer .btnWrapper {
+    top: 236px;
+  }
+}

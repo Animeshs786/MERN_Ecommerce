@@ -1,0 +1,22 @@
+main {
+  max-height: 525px;
+  overflow: auto;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.buttonWrapper {
+  margin: 20px 0;
+}
+
+
+@media(max-width:1000px){
+  .buttonWrapper button{
+    font-size: 13px !important;
+    height: 38px !important;
+    width: 133px !important;
+  }
+}

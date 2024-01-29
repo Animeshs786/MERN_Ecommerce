@@ -1,0 +1,11 @@
+.specificationWrapper{
+    width: 100%;
+    max-width: 567px;
+    padding-left: 15px;
+}
+
+.specificationWrapper li{
+    list-style: disc;
+    font-size: 13px;
+    font-weight: 300;
+}

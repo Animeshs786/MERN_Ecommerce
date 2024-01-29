@@ -1,0 +1,201 @@
+.footerWrapper {
+  background-color: var(--base-black);
+  color: var(--base-light-white);
+  padding-top: 47px;
+}
+
+.footerWrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footerWrapper .header > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.footerWrapper .header > div:first-child h3 {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--base-light-white);
+}
+.footerWrapper .header > div:first-child span {
+  font-size: 16px;
+  font-weight: 300;
+}
+.footerWrapper .header > div:last-child {
+  width: 50%;
+  display: flex;
+  gap: 23px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footerWrapper .header > div:last-child input {
+  background-color: transparent;
+  border: 2px solid var(--base-light-white);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 391px;
+  height: 40px;
+  font-size: 14px;
+  color: var(--base-light-white);
+  font-weight: 300;
+  padding: 0 10px;
+}
+.footerWrapper .header > div:last-child button {
+  background-color: var(--base-blue);
+  color: var(--base-light-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+  max-width: 151px;
+}
+.footerWrapper .listWrapper {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.footerWrapper .listWrapper > div h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footerWrapper .listWrapper > div ul {
+  padding-top: 18px;
+}
+.footerWrapper .listWrapper > div ul li {
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.footerWrapper .listWrapper > div:last-child ul li {
+  cursor: auto;
+}
+.footerWrapper .listWrapper > div ul li span {
+  color: var(--base-light-blue);
+}
+.footerWrapper .listWrapper > div {
+  max-width: 310px;
+}
+.footerWrapper :global(.container) > hr {
+  color: var(--base-light-white);
+  opacity: 0.2;
+  height: 1;
+}
+.footerWrapper .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+.footerWrapper .bottom > div {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.footerWrapper .bottom > div:last-child {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+@media (max-width: 1400px) {
+  .footerWrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footerWrapper .header > div:first-child h3 {
+    font-size: 18px;
+  }
+  .footerWrapper .header > div:first-child span {
+    font-size: 12px;
+  }
+  .footerWrapper .listWrapper {
+    gap: 20px;
+  }
+
+  .footerWrapper .header > div:last-child input {
+    max-width: 200px;
+  }
+
+  .footerWrapper .header > div:last-child button {
+    font-size: 13px;
+    max-width: 130px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footerWrapper .listWrapper {
+    flex-direction: column;
+  }
+
+  .footerWrapper .listWrapper > div {
+    max-width: 100%;
+  }
+
+  .footerWrapper .listWrapper hr {
+    color: var(--base-gray);
+  }
+
+  .footerWrapper .listWrapper > div h4 {
+    font-size: 11px;
+    color: #e5ecf1;
+    margin-left: 5px;
+  }
+
+  .footerWrapper .listWrapper > div ul li {
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--base-light-white);
+  }
+  .footerWrapper .listWrapper > div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .footerWrapper .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .footerWrapper .header > div:last-child {
+    width: 100%;
+  }
+
+  .footerWrapper .header > div:last-child input {
+    max-width: 100%;
+  }
+  .footerWrapper .bottom{
+    display: grid;
+    grid-template-columns:100px 1fr;
+    row-gap: 14px;
+  }
+
+  .footerWrapper .bottom > div:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+  }
+  .footerWrapper .bottom > div:nth-child(3) {
+    justify-self: end;
+  }
+}

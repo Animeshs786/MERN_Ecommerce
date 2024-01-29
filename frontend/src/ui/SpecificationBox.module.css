@@ -1,0 +1,44 @@
+.infoWrapper {
+  margin-left: 210px;
+  margin-top: 50px;
+}
+
+.infoWrapper header h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--base-black);
+  padding: 12px 0;
+}
+
+@media (max-width: 1200px) {
+  .infoWrapper {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+  .infoWrapper header h2 {
+    font-size: 22px;
+  }
+
+  .specificationWrapper li {
+    font-size: 12px;
+  }
+
+  .infoWrapper {
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 680px) {
+  .infoWrapper > ul:first-child {
+    display: none !important;
+  }
+  .infoWrapper {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}

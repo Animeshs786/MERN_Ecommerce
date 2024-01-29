@@ -1,0 +1,49 @@
+.qtyWrapper {
+  width: 70px;
+  height: 50px;
+  background-color: var(--base-white);
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 6px;
+}
+.qtyWrapper span {
+  display: flex;
+  width: 46px;
+  height: 27px;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--base-black);
+  align-items: center;
+}
+.qtyWrapper > .decreamentBtn {
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.qtyWrapper > .increamentBtn {
+  position: absolute;
+  bottom: 9px;
+  right: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .qtyWrapper {
+    width: 55px;
+    height: 40px;
+  }
+
+  .qtyWrapper> .decreamentBtn {
+    top: 4px;
+    right: 8px;
+  }
+
+  .qtyWrapper> .increamentBtn {
+    bottom: 4px;
+    right: 8px;
+  }
+}

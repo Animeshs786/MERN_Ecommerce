@@ -1,0 +1,103 @@
+.loginWrapper .headerWrapper h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--base-black);
+}
+
+.loginWrapper .headerWrapper span {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--base-black);
+  display: block;
+  margin: 15px 0;
+}
+
+.loginMainWrapper {
+  display: flex;
+  gap: 34px;
+  margin-top: 20px;
+  margin-bottom: 58px;
+  margin-left: 100px;
+}
+
+.listWrapper {
+  padding-left: 15px;
+}
+
+.listWrapper li {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--base-black);
+  list-style-type: disc;
+}
+
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  padding-top: 28px;
+}
+
+.buttonWrapper .forgetLink {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--base-blue);
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .loginContainer {
+    padding: 0 10px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .loginMainWrapper {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .loginWrapper .headerWrapper h3 {
+    font-size: 14px;
+  }
+
+  .loginWrapper .headerWrapper span {
+    font-size: 12px;
+  }
+
+  .listWrapper li {
+    font-size: 12px;
+  }
+
+  .buttonWrapper button {
+    font-size: 13px !important;
+    width: 183px !important;
+    height: 38px !important;
+  }
+  form .buttonWrapper button {
+    font-size: 13px !important;
+    width: 133px !important;
+    height: 38px !important;
+  }
+
+  .loginMainWrapper > div {
+    padding: 24px 18px !important;
+  }
+  .buttonWrapper .forgetLink{
+    font-size: 11px;
+  }
+}
+
+
+@media(max-width:690px){
+  .loginMainWrapper {
+    flex-direction: column;
+  }
+}

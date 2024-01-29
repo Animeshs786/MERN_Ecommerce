@@ -1,0 +1,63 @@
+.selectWrapper {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.selectWrapper label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.selectWrapper label > span {
+  color: var(--base-red);
+}
+
+.selectWrapper > span {
+  color: var(--base-red);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.selectWrapper select {
+  height: 50px;
+  border: 1px solid var(--base-gray);
+  padding: 0 17px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: var(--base-black);
+}
+
+.selectWrapper select:focus {
+  outline: none;
+}
+
+select option {
+  background-color: var(--base-light-white);
+  color:var(--base-black);
+}
+
+/* Style the hover state of options */
+select option:hover {
+  background-color: var(--base-blue);
+  color:var(--base-light-white);
+}
+
+/* Style the selected option */
+select option:checked {
+  background-color:var(--base-blue);
+  color:var(--base-light-white);
+}
+
+@media(max-width:1000px){
+  .selectWrapper select{
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .selectWrapper > span, .selectWrapper label{
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,217 @@
+.productCard {
+  width: 100%;
+  max-width: 235px;
+  min-width: 200px;
+  background-color: var(--base-light-white);
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: 342px;
+}
+.hidden {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.productCard:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  max-height: 100% !important;
+}
+.show {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.productCard .imageContainer {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.productCard .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.productCard header {
+  position: relative;
+  padding-top: 26px;
+}
+
+.productCard header .stockWrapper {
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.productCard header .stockWrapper span {
+  color: var(--base-green);
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 10px;
+}
+.productCard header .stockWrapper span.stockOut {
+  color: var(--base-red);
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 10px;
+}
+.productCard header .whishlistWrapper {
+  position: absolute;
+  top: 16px;
+  right: 11px;
+  cursor: pointer;
+}
+
+.productCard header .compareWrapper {
+  position: absolute;
+  top: 56px;
+  right: 11px;
+  cursor: pointer;
+}
+.productCard header .compareWrapper > img:last-child {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+.rating {
+  display: flex;
+}
+.ratingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0px 4px 0px;
+}
+.ratingWrapper > span {
+  font-size: 12px;
+  font-weight: 400px;
+  color: var(--base-gray);
+}
+.productName {
+  font-size: 13px;
+  font-weight: 400;
+  max-width: 174px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  color: var(--base-black);
+}
+.priceWrapper {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+.priceWrapper .productPrice {
+  display: block;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--base-dark-gray);
+}
+.priceWrapper .productSellPrice {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--base-black);
+}
+
+.productCard button {
+  width: 100%;
+  max-width: 156.23px;
+  background: transparent;
+  border: 2px solid var(--base-blue);
+  color: var(--base-blue);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 0px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 17px;
+}
+.productContent {
+  padding-left: 25px;
+  padding-right: 13px;
+}
+
+@media (min-width: 320px) and (max-width: 1020px) {
+  .productCard {
+    min-width: 180px;
+    max-height: 265px;
+  }
+  .productCard .imageContainer {
+    width: 100px;
+    height: 100px;
+  }
+  .productName {
+    font-size: 11px;
+  }
+
+  .ratingWrapper > span {
+    font-size: 10px;
+  }
+
+  .rating > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .rating > div img {
+    width: 10px;
+  }
+
+  .priceWrapper .productPrice {
+    font-size: 12px;
+  }
+
+  .priceWrapper .productSellPrice {
+    font-size: 14px;
+  }
+
+  .priceWrapper {
+    height: 50px;
+  }
+
+  .productCard button {
+    max-width: 120px;
+    font-size: 10px;
+    gap: 5px;
+    padding: 6px 0px;
+    margin-top: 4px;
+  }
+  .productCard button img {
+    width: 14px;
+  }
+
+  .productCard header .whishlistWrapper > img {
+    width: 20px;
+  }
+  .productCard header .compareWrapper {
+    top: 50px;
+  }
+
+  .productCard header .compareWrapper img {
+    width: 20px;
+  }
+  .productCard header .compareWrapper > img:last-child {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 9px;
+  }
+  .productContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .productCard header .stockWrapper {
+    left: 10px;
+  }
+}

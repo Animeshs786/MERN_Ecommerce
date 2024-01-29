@@ -1,0 +1,12 @@
+.ratingWrapper {
+  display: flex;
+  gap: 12px;
+  align-items: self-end;
+  height: 40px ;
+}
+
+.ratingWrapper > span {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--base-yellow);
+}

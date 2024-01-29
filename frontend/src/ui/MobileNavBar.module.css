@@ -1,0 +1,75 @@
+.navContainer {
+  background-color: var(--base-blue);
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.navContainer > img {
+  position: absolute;
+  top: -24px;
+  left: 33px;
+}
+.navContainer::before {
+  content: url("/images/shape-icon.svg");
+  position: absolute;
+  top: -34px;
+  left: 10px;
+}
+.navContainer .navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.navContainer .navList > div:nth-child(2) {
+  width: 100%;
+  max-width: 518px;
+  position: relative;
+}
+.navContainer .navList > div:nth-child(2) img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+.navContainer .navList > div:nth-child(2) input {
+  width: 100%;
+  height: 38px;
+  border-radius: 25px;
+  background-color: var(--base-light-white);
+  border: none;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--base-black);
+  padding-left: 38px;
+  padding-right: 10px;
+}
+
+.navContainer .navList > div:nth-child(2) input::placeholder {
+  color: var(--base-light-gray);
+  font-weight: 400;
+}
+
+.navContainer .iconWrapper > div:last-child img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: contain;
+  cursor: pointer;
+}
+.navContainer .navList > div:nth-child(1) img {
+  cursor: pointer;
+  margin-left: 18px;
+}
+.navContainer .navList > div:nth-child(1),
+.navContainer .iconWrapper > div {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .navContainer .navList {
+    padding-right: 10px;
+  }
+}

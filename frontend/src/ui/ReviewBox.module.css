@@ -1,0 +1,65 @@
+.reviewMainWrapper {
+  padding: 20px 0;
+  display: flex;
+  max-height: 440px;
+  overflow: auto;
+  gap: 20px;
+}
+
+.reviewBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.reviewBox h4 {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--base-black);
+}
+
+.reviewBox p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--base-gray);
+}
+
+.reviewBox > div img {
+  width: 30px;
+}
+
+@media (max-width: 1200px) {
+  .reviewMainWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+  .reviewBox > div img {
+    width: 22px;
+  }
+
+  .reviewBox h4 {
+    font-size: 22px;
+  }
+  .reviewBox {
+    gap: 5px;
+  }
+
+  .reviewBox p {
+    font-size: 12px;
+  }
+  .reviewBox button {
+    font-size: 12px !important;
+    width: 150px !important;
+    height: 38px !important;
+  }
+  .reviewMainWrapper{
+    max-height: 365px;
+  }
+}

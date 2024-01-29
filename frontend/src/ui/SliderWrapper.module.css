@@ -1,0 +1,21 @@
+.sliderWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.sliderWrapper .btnWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+.sliderWrapper .btnWrapper .nextBtn ,.prevBtn{
+    cursor: pointer;
+}
+
+.sliderWrapper .contentWrapper{
+    width: 100%;
+}

@@ -1,0 +1,110 @@
+.orderItemWrapper {
+  width: 100%;
+  max-width: 916px;
+  overflow: auto;
+}
+.orderItemWrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.orderItemWrapper table thead th {
+  border-bottom: 1px solid var(--base-light-gray);
+  text-align: start;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--base-black);
+  padding-bottom: 8px;
+
+  position: sticky;
+  top: 0;
+  background-color: var(--base-light-white);
+  z-index: 9;
+}
+
+.orderMainWrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.tableWrapper {
+  max-height: 950px;
+  overflow: auto;
+}
+
+.additionalInfo .boxWrapper {
+  padding: 0 32px;
+  background-color: var(--base-white);
+  border-radius: 4px;
+  padding-bottom: 18px;
+}
+
+.additionalInfo {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.additionalInfo .boxWrapper .header {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--base-black);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--base-light-gray);
+  margin-bottom: 12px;
+}
+
+.additionalInfo .boxWrapper .contentWrapper > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.additionalInfo .boxWrapper .contentWrapper > div:last-child {
+  margin-bottom: 0px;
+}
+
+.additionalInfo .boxWrapper .contentWrapper > div > div {
+  max-width: 250px;
+}
+
+.additionalInfo .boxWrapper .contentWrapper > div > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  min-width: 135px;
+  align-items: center;
+}
+
+.additionalInfo .boxWrapper .contentWrapper > div h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--base-black);
+}
+
+.additionalInfo .boxWrapper .contentWrapper > div span {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--base-black);
+}
+
+@media (max-width: 1000px) {
+  .additionalInfo .boxWrapper .contentWrapper > div h5 {
+    font-size: 12px;
+  }
+
+  .additionalInfo .boxWrapper .contentWrapper > div span {
+    font-size: 11px;
+  }
+
+  .orderMainWrapper{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  
+}

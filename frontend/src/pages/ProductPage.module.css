@@ -1,0 +1,26 @@
+.gamingBannerWrapper{
+  display: flex;
+  justify-content: center;
+}
+.gamingBannerWrapper img {
+  width: 100%;
+  max-width: 1398px;
+  height: 104px;
+  object-fit: cover;
+}
+
+:global(.container).productOuterWrapper {
+  margin-bottom: 60px;
+}
+
+@media(max-width:800px){
+  .gamingBannerWrapper img {
+    height: 60px;
+  }
+}
+
+@media(max-width:500px){
+  .gamingBannerWrapper img {
+    height: 50px;
+  }
+}

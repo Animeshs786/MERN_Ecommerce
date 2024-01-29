@@ -1,0 +1,84 @@
+.contentWrapper {
+  width: 100%;
+  max-width: 924px;
+}
+
+.contentWrapper > header {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--base-black);
+  border-bottom: 1px solid var(--base-gray);
+  padding-bottom: 10px;
+}
+
+.contentWrapper .inputWrapper {
+  width: 100%;
+  max-width: 565px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkoutMainWrapper {
+  margin-top: 43px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 87px;
+}
+
+.contentWrapper .paymentWrapper {
+  border-top: 1px solid var(--base-gray);
+  padding-top: 10px;
+  margin-top: 24px;
+}
+
+.contentWrapper .paymentWrapper > div label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--base-black);
+}
+
+.contentWrapper .paymentWrapper .cashMode {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.contentWrapper .paymentWrapper > div > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contentWrapper .paymentWrapper > div > div span {
+  font-size: 13px;
+  font-weight: 400;
+}
+.contentWrapper .buttonWrapper {
+  margin-top: 35px;
+}
+
+@media (max-width: 1000px) {
+  .buttonWrapper button {
+    font-size: 13px !important;
+    width: 133px !important;
+    height: 38px !important;
+  }
+
+  .contentWrapper .paymentWrapper > div label {
+    font-size: 11px;
+  }
+
+  .contentWrapper .paymentWrapper > div > div span {
+    font-size: 12px;
+  }
+}
+
+@media(max-width:730px){
+  .checkoutMainWrapper{
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+}

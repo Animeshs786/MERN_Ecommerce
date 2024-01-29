@@ -1,0 +1,20 @@
+.mainWrapper{
+    width: 100%;
+    min-width: 150px;
+}
+
+.mainWrapper .headerWrapper{
+    position: relative;
+}
+
+.headerWrapper img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.mainWrapper hr{
+    margin-top: 10px;
+}

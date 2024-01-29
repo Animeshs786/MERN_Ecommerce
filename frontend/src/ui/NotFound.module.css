@@ -1,0 +1,29 @@
+.mainWrapper {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainWrapper .imageContainer {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+}
+
+.mainWrapper .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .mainWrapper {
+    align-items: flex-start;
+  }
+  .mainWrapper .imageContainer {
+    max-width: 400px;
+    height: 400px;
+  }
+}

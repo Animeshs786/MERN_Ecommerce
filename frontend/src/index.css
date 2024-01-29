@@ -1,0 +1,70 @@
+:root {
+  --base-white: #f5f7ff;
+  --base-dark-blue: #0074be;
+  --base-blue: #0156ff;
+  --base-light-blue: #01a4ff;
+  --base-gray: #a2a6b0;
+  --base-light-gray: #cacdd8;
+  --base-black: #000000;
+  --base-red: #c94d3f;
+  --base-green: #78a962;
+  --base-dark-gray: #666666;
+  --base-light-white: #fff;
+  --base-yellow: #ffb800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1398px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+a:active {
+  color: var(--base-blue);
+}
+body {
+  background-color: var(--base-light-white);
+}
+ul {
+  list-style: none;
+}
+input:focus {
+  outline: none;
+}
+main {
+  height: auto;
+}
+
+.editIcon,
+.deleteIcon,
+.showIcon {
+  color: var(--base-gray);
+  cursor: pointer;
+}
+
+.createIcon {
+  color: var(--base-blue);
+  cursor: pointer;
+}
+
+.iconWrapper {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    padding: 0 10px;
+  }
+}

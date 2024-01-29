@@ -1,0 +1,17 @@
+.breadCrumbsWrapper{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.breadCrumbsWrapper .listItem{
+    font-size: 12px;
+    font-weight: 400;
+    color:var(--base-black);
+    cursor: pointer;
+}
+
+.breadCrumbsWrapper .listIcon{
+    color: var(--base-blue);
+}

@@ -1,0 +1,16 @@
+:global(#basic-menu) .menuItems{
+    color:var(--base-black);
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Poppins";
+    padding-left: 26px;
+}
+
+:global(#basic-menu) .menuItems:hover{
+    background-color: transparent;
+}
+
+:global(#basic-menu) .menuItems:focus{
+    background-color: transparent !important;
+    outline: none !important;
+}

@@ -1,0 +1,12 @@
+.brandWrapper {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.brandWrapper img {
+  width: 100%;
+  max-width: 174px;
+  height: 79.484px;
+  object-fit: contain;
+}

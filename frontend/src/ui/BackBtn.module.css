@@ -1,0 +1,27 @@
+.backBtn {
+  width: 233px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backBtn span {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--base-black);
+  cursor: pointer;
+}
+
+@media(max-width:768px){
+  .backBtn span{
+    font-size: 13px;
+  }
+}
+
+@media(max-width:767px){
+  .backBtn {
+    justify-content: start;
+    height: 44px;
+  }
+}

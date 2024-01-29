@@ -1,0 +1,12 @@
+.heading {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--base-black);
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 18px;
+  }
+}

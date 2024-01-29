@@ -1,0 +1,43 @@
+.newProductWrapper {
+  margin-top: 36px;
+}
+
+.newProductWrapper .headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newProductWrapper .headerWrapper > div:first-child h3 {
+  color: var(--base-black);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.newProductWrapper .headerWrapper > div:last-child a {
+  color: var(--base-blue);
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.newProductWrapper .contentWrapper {
+  margin-top: 14px;
+}
+
+.productBuildsWrapper {
+  display: flex;
+  margin-top: 36px;
+  align-items: center;
+}
+
+.tabWrapper {
+  margin-top: 36px;
+}
+
+.reviewWrapper {
+  margin-top: 58px;
+}
+
+.brandWrapper {
+  margin-top: 30px;
+}

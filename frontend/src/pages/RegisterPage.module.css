@@ -1,0 +1,101 @@
+.registerWrapper .headerWrapper h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--base-black);
+  }
+  
+  .registerWrapper .headerWrapper span {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--base-black);
+    display: block;
+    margin: 15px 0;
+  }
+  
+  .registerMainWrapper {
+    display: flex;
+    gap: 34px;
+    margin-top: 20px;
+    margin-bottom: 58px;
+    margin-left: 100px;
+  }
+  
+  .listWrapper {
+    padding-left: 15px;
+  }
+  
+  .listWrapper li {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--base-black);
+    list-style-type: disc;
+  }
+  
+  .fieldWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .buttonWrapper {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    padding-top: 28px;
+  }
+  
+  .buttonWrapper a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--base-blue);
+  }
+  
+
+  
+@media (max-width: 1400px) {
+  .registerContainer {
+    padding: 0 10px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .registerMainWrapper {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .registerWrapper .headerWrapper h3 {
+    font-size: 14px;
+  }
+
+  .registerWrapper .headerWrapper span {
+    font-size: 12px;
+  }
+
+  .listWrapper li {
+    font-size: 12px;
+  }
+
+  .buttonWrapper button {
+    font-size: 13px !important;
+    width: 183px !important;
+    height: 38px !important;
+  }
+  form .buttonWrapper button {
+    font-size: 13px !important;
+    width: 133px !important;
+    height: 38px !important;
+  }
+
+  .registerMainWrapper > div {
+    padding: 24px 18px !important;
+  }
+}
+
+
+@media(max-width:690px){
+  .registerMainWrapper {
+    flex-direction: column;
+  }
+}

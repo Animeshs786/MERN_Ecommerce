@@ -1,0 +1,5 @@
+.productWrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
