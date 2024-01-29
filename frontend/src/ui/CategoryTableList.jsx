@@ -44,13 +44,13 @@ function CategoryTableList() {
   if (isLoading) return <Loader />;
   if (error) return <Error error={error} />;
 
-  if (categories.length <= 0) {
-    return (
-      <NotFound>
-        <img src="/images/resultNotFound.png" alt="not-found-img" />
-      </NotFound>
-    );
-  }
+  // if (categories.length <= 0) {
+  //   return (
+  //     <NotFound>
+  //       <img src="/images/resultNotFound.png" alt="not-found-img" />
+  //     </NotFound>
+  //   );
+  // }
 
 
   return (

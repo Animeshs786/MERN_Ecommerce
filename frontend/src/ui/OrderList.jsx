@@ -41,14 +41,13 @@ function OrderList() {
 
   const { order: orders } = data?.data || {};
 
-  if (order.length <= 0) {
+  if (orders.length <= 0) {
     return (
       <NotFound>
         <img src="/images/resultNotFound.png" alt="not-found-img" />
       </NotFound>
     );
   }
-
 
   return (
     <div>

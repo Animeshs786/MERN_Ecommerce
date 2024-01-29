@@ -25,13 +25,13 @@ function ProductTableList() {
   if (isLoading) return <Loader />;
   if (error) return <Error error={error} />;
 
-  if (product.length <= 0) {
-    return (
-      <NotFound>
-        <img src="/images/resultNotFound.png" alt="not-found-img" />
-      </NotFound>
-    );
-  }
+  // if (product.length <= 0) {
+  //   return (
+  //     <NotFound>
+  //       <img src="/images/resultNotFound.png" alt="not-found-img" />
+  //     </NotFound>
+  //   );
+  // }
 
 
   return (

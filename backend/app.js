@@ -19,7 +19,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Serve static files from the 'backend/public' directory
-app.use("/public", express.static(path.join(__dirname, "public")));
+app.use("/api/img", express.static(path.join(__dirname, "public/img")));
+// app.use("/public", express.static(path.join(__dirname, "public")));
 
 //test middleware
 app.use((req, res, next) => {
@@ -34,17 +35,13 @@ app.use("/api/v1/category", categoryRoute);
 app.use("/api/v1/reviews", reviewRoute);
 app.use("/api/v1/orders", orderRoute);
 
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.join(__dirname, "../frontend/dist")));
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"));
-//   });
-// }
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"));
+  });
+}
 
-app.use(express.static(path.resolve(__dirname, "../frontend", "dist")));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend", "dist", "index.html"));
-});
 
 //undefine route error handler
 app.all("*", function (req, res, next) {
