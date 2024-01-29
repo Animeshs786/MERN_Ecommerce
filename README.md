@@ -1,4 +1,4 @@
-# MERN E-COMMERCE TUTORIAL
+# MERN E-COMMERCE
 
 Hi! My name is **Animesh Singh**, 
 
